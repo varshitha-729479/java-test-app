@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AppTest" time="8.305" tests="24" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\hi\OneDrive\Desktop\test-java-app\target\test-classes;C:\Users\hi\OneDrive\Desktop\test-java-app\target\classes;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\hi\AppData\Local\Temp\surefire17705115295027082819\surefirebooter-20260329153134020_3.jar C:\Users\hi\AppData\Local\Temp\surefire17705115295027082819 2026-03-29T15-31-33_905-jvmRun1 surefire-20260329153134020_1tmp surefire_0-20260329153134020_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\hi\OneDrive\Desktop\test-java-app\target\test-classes;C:\Users\hi\OneDrive\Desktop\test-java-app\target\classes;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\hi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\hi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\hi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\hi\OneDrive\Desktop\test-java-app"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\hi\AppData\Local\Temp\surefire17705115295027082819\surefirebooter-20260329153134020_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="hi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\hi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hi\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\Users\hi\OneDrive\Desktop\test-java-app"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python314\Scripts\;C:\Python314\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\HP\HP One Agent;C:\Program Files\Java\jdk-22\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\apache-maven-3.9.13\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\hi\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hi\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\hi\AppData\Local\Programs\Python\Python312\;C:\Users\hi\AppData\Local\Programs\Python\Launcher\;C:\Users\hi\AppData\Local\Microsoft\WindowsApps;C:\Users\hi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hi\AppData\Local\Programs\mongosh\;C:\Users\hi\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testEarthquakeTriggerAboveThreshold" classname="AppTest" time="0.023">
+    <system-out><![CDATA[🚨 Setting up Emergency Alert System Tests
+]]></system-out>
+  </testcase>
+  <testcase name="testEarthquakeTriggerBelowThreshold" classname="AppTest" time="0.001"/>
+  <testcase name="testFireTrigger" classname="AppTest" time="0.002"/>
+  <testcase name="testFireTriggerBelowThreshold" classname="AppTest" time="0.001"/>
+  <testcase name="testFloodTrigger" classname="AppTest" time="0.002"/>
+  <testcase name="testHurricaneTrigger" classname="AppTest" time="0.001"/>
+  <testcase name="testTsunamiTrigger" classname="AppTest" time="0.001"/>
+  <testcase name="testCyberAttackTrigger" classname="AppTest" time="0.001"/>
+  <testcase name="testNullParameters" classname="AppTest" time="0.001"/>
+  <testcase name="testEarthquakeSeverityCritical" classname="AppTest" time="0.003"/>
+  <testcase name="testEarthquakeSeverityHigh" classname="AppTest" time="0.001"/>
+  <testcase name="testFireSeverityCritical" classname="AppTest" time="0.001"/>
+  <testcase name="testHurricaneSeverityCritical" classname="AppTest" time="0.001"/>
+  <testcase name="testAlertGenerationValid" classname="AppTest" time="0.081">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:35] EARTHQUAKE - Test Earthquake: Test message (Severity: HIGH, Location: Test Location)
+   Recipients: 4 contacts
+]]></system-out>
+  </testcase>
+  <testcase name="testAlertGenerationInvalid" classname="AppTest" time="0.002">
+    <system-out><![CDATA[Conditions not met for alert: EARTHQUAKE
+]]></system-out>
+  </testcase>
+  <testcase name="testAlertHistoryTracking" classname="AppTest" time="0.002">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:35] EARTHQUAKE - Test: Message (Severity: HIGH, Location: Location)
+   Recipients: 4 contacts
+]]></system-out>
+  </testcase>
+  <testcase name="testPerfectNotificationReliability" classname="AppTest" time="0.009">
+    <system-out><![CDATA[  🔔 PUSH sent to test@example.com: Test
+  📱 SMS sent to test@example.com: Test
+  🚨 SIREN activated at test@example.com for FIRE
+  📧 EMAIL sent to test@example.com: Test
+
+📊 Notification Summary for Alert e87883ff:
+   Success rate: 100.0%
+]]></system-out>
+  </testcase>
+  <testcase name="testNotificationRetryMechanism" classname="AppTest" time="6.027">
+    <system-out><![CDATA[  🚨 SIREN activated at test@example.com for FIRE
+
+📊 Notification Summary for Alert cef6ba59:
+   Success rate: 25.0%
+]]></system-out>
+    <system-err><![CDATA[  ❌ EMAIL failed to test@example.com
+  ❌ SMS failed to test@example.com
+  ❌ PUSH failed to test@example.com
+  ❌ EMAIL failed to test@example.com
+  ❌ PUSH failed to test@example.com
+  ❌ SMS failed to test@example.com
+  ❌ PUSH failed to test@example.com
+  ❌ EMAIL failed to test@example.com
+  ❌ SMS failed to test@example.com
+]]></system-err>
+  </testcase>
+  <testcase name="testMultipleRecipientsNotification" classname="AppTest" time="0.006">
+    <system-out><![CDATA[  📧 EMAIL sent to recipient1@test.com: Test
+  📱 SMS sent to recipient1@test.com: Test
+  🔔 PUSH sent to recipient1@test.com: Test
+  🚨 SIREN activated at recipient1@test.com for EARTHQUAKE
+  📱 SMS sent to recipient2@test.com: Test
+  📧 EMAIL sent to recipient2@test.com: Test
+  🔔 PUSH sent to recipient2@test.com: Test
+  🚨 SIREN activated at recipient2@test.com for EARTHQUAKE
+  🚨 SIREN activated at +1-555-0001 for EARTHQUAKE
+  🔔 PUSH sent to +1-555-0001: Test
+  📱 SMS sent to +1-555-0001: Test
+  📧 EMAIL sent to +1-555-0001: Test
+
+📊 Notification Summary for Alert 31534509:
+   Success rate: 100.0%
+]]></system-out>
+  </testcase>
+  <testcase name="testEndToEndAlertFlow" classname="AppTest" time="1.031">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:41] EARTHQUAKE - E2E Test Earthquake: Testing full flow (Severity: HIGH, Location: Test City)
+   Recipients: 4 contacts
+  📧 EMAIL sent to 911-dispatch@testcity.gov: E2E Test Earthquake
+  📱 SMS sent to 911-dispatch@testcity.gov: E2E Test Earthquake
+  🚨 SIREN activated at 911-dispatch@testcity.gov for EARTHQUAKE
+  🔔 PUSH sent to 911-dispatch@testcity.gov: E2E Test Earthquake
+  🚨 SIREN activated at local-authorities@testcity.gov for EARTHQUAKE
+  📧 EMAIL sent to emergency-services@response.gov: E2E Test Earthquake
+  📱 SMS sent to emergency-services@response.gov: E2E Test Earthquake
+  🔔 PUSH sent to emergency-services@response.gov: E2E Test Earthquake
+  🚨 SIREN activated at emergency-services@response.gov for EARTHQUAKE
+  📧 EMAIL sent to +1-800-EMERGENCY: E2E Test Earthquake
+  📱 SMS sent to +1-800-EMERGENCY: E2E Test Earthquake
+  🔔 PUSH sent to +1-800-EMERGENCY: E2E Test Earthquake
+  🚨 SIREN activated at +1-800-EMERGENCY for EARTHQUAKE
+  📧 EMAIL sent to local-authorities@testcity.gov: E2E Test Earthquake
+  📱 SMS sent to local-authorities@testcity.gov: E2E Test Earthquake
+  🔔 PUSH sent to local-authorities@testcity.gov: E2E Test Earthquake
+
+📊 Notification Summary for Alert 32aeb669:
+   Success rate: 100.0%
+   Successful notifications: 16/16
+Emergency Alert System shutdown complete
+]]></system-out>
+    <system-err><![CDATA[  ❌ PUSH failed to local-authorities@testcity.gov
+]]></system-err>
+  </testcase>
+  <testcase name="testAlertCancellation" classname="AppTest" time="1.016">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:42] EARTHQUAKE - Cancellable Alert: This alert will be cancelled (Severity: HIGH, Location: Test City)
+   Recipients: 4 contacts
+  📧 EMAIL sent to 911-dispatch@testcity.gov: Cancellable Alert
+  📱 SMS sent to 911-dispatch@testcity.gov: Cancellable Alert
+  🔔 PUSH sent to 911-dispatch@testcity.gov: Cancellable Alert
+  📧 EMAIL sent to +1-800-EMERGENCY: Cancellable Alert
+  🚨 SIREN activated at 911-dispatch@testcity.gov for EARTHQUAKE
+  🚨 SIREN activated at local-authorities@testcity.gov for EARTHQUAKE
+  🔔 PUSH sent to local-authorities@testcity.gov: Cancellable Alert
+  📧 EMAIL sent to emergency-services@response.gov: Cancellable Alert
+  🔔 PUSH sent to emergency-services@response.gov: Cancellable Alert
+  📱 SMS sent to +1-800-EMERGENCY: Cancellable Alert
+  🚨 SIREN activated at emergency-services@response.gov for EARTHQUAKE
+  📱 SMS sent to emergency-services@response.gov: Cancellable Alert
+  🔔 PUSH sent to +1-800-EMERGENCY: Cancellable Alert
+  🚨 SIREN activated at +1-800-EMERGENCY for EARTHQUAKE
+  📱 SMS sent to local-authorities@testcity.gov: Cancellable Alert
+  📧 EMAIL sent to local-authorities@testcity.gov: Cancellable Alert
+
+📊 Notification Summary for Alert 4ef03f82:
+   Success rate: 100.0%
+   Successful notifications: 16/16
+❌ Alert 4ef03f82 has been CANCELLED
+Emergency Alert System shutdown complete
+]]></system-out>
+    <system-err><![CDATA[  ❌ EMAIL failed to local-authorities@testcity.gov
+]]></system-err>
+  </testcase>
+  <testcase name="testAlertUniqueId" classname="AppTest" time="0.003"/>
+  <testcase name="testRecipientsBySeverity" classname="AppTest" time="0.003">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Critical: Msg (Severity: CRITICAL, Location: City)
+   Recipients: 8 contacts
+
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Low: Msg (Severity: MEDIUM, Location: City)
+   Recipients: 3 contacts
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentAlertGeneration" classname="AppTest" time="0.009">
+    <system-out><![CDATA[
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Concurrent Test: Concurrent message (Severity: HIGH, Location: City)
+
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Concurrent Test: Concurrent message (Severity: HIGH, Location: City)
+   Recipients: 4 contacts
+   Recipients: 4 contacts
+
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Concurrent Test: Concurrent message (Severity: HIGH, Location: City)
+
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Concurrent Test: Concurrent message (Severity: HIGH, Location: City)
+   Recipients: 4 contacts
+   Recipients: 4 contacts
+
+✅ ALERT GENERATED: [2026-03-29 15:31:43] EARTHQUAKE - Concurrent Test: Concurrent message (Severity: HIGH, Location: City)
+   Recipients: 4 contacts
+]]></system-out>
+  </testcase>
+</testsuite>
