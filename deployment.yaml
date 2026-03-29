@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: java-test-app
-        image: dockerhub-username/java-test-app:latest
+        image: varshitha729479/java-test-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -28,12 +28,14 @@ spec:
             memory: "512Mi"
             cpu: "500m"
         livenessProbe:
-          tcpSocket:
+          httpGet:
+            path: /
             port: 8080
           initialDelaySeconds: 30
           periodSeconds: 10
         readinessProbe:
-          tcpSocket:
+          httpGet:
+            path: /
             port: 8080
           initialDelaySeconds: 10
           periodSeconds: 5
