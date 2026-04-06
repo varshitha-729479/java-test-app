@@ -1,0 +1,94 @@
+pipeline {
+    agent any
+    
+    environment {
+        DOCKER_IMAGE = "varshitha729479/java-test-app:latest"
+    }
+    
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/varshitha-729479/java-test-app.git'
+            }
+        }
+        
+        stage('Build & Run Tests') {
+            steps {
+                bat 'mvn clean test'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
+        }
+        
+        stage('Package Application') {
+            steps {
+                bat 'mvn package -DskipTests'
+            }
+        }
+        
+        stage('Build Docker Image') {
+            steps {
+                bat "docker build -t %DOCKER_IMAGE% ."
+            }
+        }
+        
+        stage('Push to DockerHub') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'dockerhub-creds',
+                    usernameVariable: 'DOCKER_USER',
+                    passwordVariable: 'DOCKER_PASS'
+                )]) {
+                    bat """
+                        docker login -u %DOCKER_USER% -p %DOCKER_PASS%
+                        docker push %DOCKER_IMAGE%
+                    """
+                }
+            }
+        }
+        
+        stage('Setup Kubernetes') {
+            steps {
+                bat '''
+                    if not exist "%WORKSPACE%\\.kube" mkdir "%WORKSPACE%\\.kube"
+                    copy "C:\\Users\\hi\\.kube\\config" "%WORKSPACE%\\.kube\\config"
+                    set KUBECONFIG=%WORKSPACE%\\.kube\\config
+                    kubectl config use-context minikube
+                    kubectl get nodes
+                '''
+            }
+        }
+        
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat '''
+                    set KUBECONFIG=%WORKSPACE%\\.kube\\config
+                    kubectl apply -f deployment.yaml --validate=false
+                    kubectl rollout status deployment java-test-app-deployment --timeout=5m
+                    kubectl get pods
+                    kubectl get svc
+                '''
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo '🎉 Pipeline executed successfully!'
+            echo 'Application is deployed on Minikube.'
+            echo 'Access it with: kubectl port-forward service/java-test-app-service 8080:80'
+        }
+        failure {
+            echo '❌ Pipeline failed. Check the logs above.'
+        }
+        always {
+            script {
+                bat 'taskkill /F /IM kubectl.exe 2>nul & exit 0'
+            }
+        }
+    }
+}
