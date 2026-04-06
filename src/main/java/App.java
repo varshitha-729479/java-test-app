@@ -1,8 +1,12 @@
+import java.net.InetSocketAddress;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import com.sun.net.httpserver.HttpServer;
+import java.net.InetSocketAddress;
+import java.io.IOException;
 
 // ==================== MODEL CLASSES ====================
 
@@ -511,7 +515,7 @@ class EmergencyAlertSystem {
 // ==================== MAIN APPLICATION ====================
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("🚨 EMERGENCY ALERT SYSTEM v1.0");
         System.out.println("=".repeat(60));
         
@@ -579,6 +583,28 @@ public class App {
         system.shutdown();
         
         System.out.println("\n✅ Emergency Alert System demonstration complete!");
+
+                HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        server.createContext("/", exchange -> {
+            String response = "Emergency Alert System Running";
+            exchange.sendResponseHeaders(200, response.length());
+            exchange.getResponseBody().write(response.getBytes());
+            exchange.close();
+        });
+        server.createContext("/health", exchange -> {
+            String response = "OK";
+            exchange.sendResponseHeaders(200, response.length());
+            exchange.getResponseBody().write(response.getBytes());
+            exchange.close();
+        });
+        server.setExecutor(null);
+        server.start();
+        System.out.println("✅ HTTP Server started on port 8080");
+        System.out.println("   Access at: http://localhost:8080");
+        System.out.println("   Health check: http://localhost:8080/health");
+        
+        // Keep the server running
+        System.out.println("Application is now running continuously...");
     }
     
     private static void sleep(int milliseconds) {
